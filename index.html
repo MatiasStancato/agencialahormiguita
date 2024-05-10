@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div><a href="#"><img  class="logoMain" src="./img/logoHormiga.png" alt="logo de una hormiga viajera"></a></div>
+            <nav class="headernav">
+                <ul>
+                    <li><a class="linkNav" href="#">DESTINOS</a></li>
+                    <li><a class="linkNav" href="./pages/contacto.html">TIPOS DE VIAJES</a></li>
+                    <li><a class="linkNav" href="./pages/login.html">VUELOS</a></li>
+                    <li><a class="linkNav" href="#">GALERIA</a></li>
+                    <li><a class="linkNav" href="#">QUIENES SOMOS</a></li>
+                    <li><a class="linkNav" href="#">CONTACTOS</a></li>
+                </ul> 
+            </nav>
+    </header>
+    <main class="homeMain">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img class="imgSlider" src="./img/1.jpg" >
+                    <div class="text">Grecia</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img class="imgSlider" src="./img/2.jpg" >
+                    <div class="text">Playa</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img class="imgSlider" src="./img/3.jpg" >
+                    <div class="text">Ciudad</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img class="imgSlider" src="./img/4.jpg" >
+                    <div class="text">playa</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>  
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>     
+        <div class="contenedorHome">
+            <h1 class="title">La hormiga voladora</h1>
+            <p class="parrafoHome">Encontra los mejores destinos, las mejoras ofertas y todo lo que necesitas para tener un excelente viaje para vos y los que queres</p>
+            <div class="cardContenier">
+                <div class="card">
+                <h2 class="titleCard">INDIA</h2>
+                <img class="imgCard" src="./img/IndiaCard.jpeg" alt="india taj majal">
+                <p class="parrafoCard">$500</p>
+                <a class="aCard" href="#">Explorá</a>
+                </div>
+                <div class="card">
+                    <h2 class="titleCard">FAMILIA</h2>
+                    <img class="imgCard" src="./img/familiaCard.jpeg" alt="familia posando para la foto">
+                    <p class="parrafoCard">$200</p>
+                    <a class="aCard" href="#">Explorá</a>
+                </div>
+                <div class="card">
+                        <h2 class="titleCard">PLAYA</h2>
+                        <img class="imgCard" src="./img/playaCard.jpeg" alt="playa">
+                        <p class="parrafoCard">$800</p>
+                        <a class="aCard" href="#">Explorá</a>
+                </div>
+                <div class="card">
+                            <h2 class="titleCard">RAPIDITO</h2>
+                            <img class="imgCard" src="./img/rapiditoCard.jpeg" alt="pareja mirando un mapa">
+                            <p class="parrafoCard">$300</p>
+                            <a class="aCard" href="#">Explorá</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer" >SOY UN FOOTER</footer>
+    <script src="./Js/script.js"></script>
+</body>
+</html>
