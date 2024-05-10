@@ -34,6 +34,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .headernav li{
@@ -174,6 +175,14 @@ header{
     text-align: center;
     color:lightseagreen
 }
+
+.titleCard{
+    font-size: 45px;
+    margin: 15px 0px;
+}
+.parrafoHome{
+    font-size: 25px;
+}
 .contenedorHome{
     height: 80vh;
     display: flex;
@@ -183,24 +192,22 @@ header{
     margin-bottom: 20px;
 }
 .cardContenier{
-    
-    width: 100%;
+    width: 70%;
     height: 500px;
     display: flex;
     flex-direction: row;
-    margin: 20px;
-    justify-content: center;
-
+    margin-top: 20px;
 }
 .card{
-    width: 20%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     border: 1px solid plum;
     background-color: palevioletred;
-    margin: 10px 10px;
+    margin: 0px 20px;
     padding: 10px 20px;
     border-radius: 3px;
     border-radius: 3px;
@@ -211,26 +218,28 @@ header{
     margin: 10px 0;
 }
 .imgCard{
-    width: 100%;
-    height: 30%;
+    width: 80%;
+    height: 100%;
     object-fit: cover;
 }
 
-.imgCard:hover{
-
-}
-
 .parrafoCard{
+    display: block;
     background-color: beige;
     font-size: 40px;
     margin: 30px 0;
     border-radius: 10px;
-    padding: 10px;
+    padding: 2px 8px;
     color: salmon;
     padding-bottom: 0px;
+    height: 12%;
+    text-align: center;
+    letter-spacing: 2px;
 }
 
 .aCard{
+    width: 100%;
+    height: 20%;
     background-color: beige;
     font-size: 40px;
     padding: 10px;
@@ -238,6 +247,10 @@ header{
     text-decoration: none;
     color: salmon;
     border-radius: 3px;
+    text-align: center;
+}
+.aCard:hover{
+    border: 3px solid gray
 }
 
 .footer{
