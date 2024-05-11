@@ -205,13 +205,12 @@ header{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid plum;
     background-color: palevioletred;
     margin: 0px 20px;
     padding: 10px 20px;
     border-radius: 3px;
     border-radius: 3px;
-    box-shadow: 5px 5px 5px orchid;
+    box-shadow: 5px 10px 10px plum
 }
 .titleCard{
     color: beige;
@@ -219,7 +218,7 @@ header{
 }
 .imgCard{
     width: 80%;
-    height: 100%;
+    height: 150px;
     object-fit: cover;
 }
 
@@ -229,10 +228,9 @@ header{
     font-size: 40px;
     margin: 30px 0;
     border-radius: 10px;
-    padding: 2px 8px;
+    padding: 3px;
     color: salmon;
-    padding-bottom: 0px;
-    height: 12%;
+    height: max-content;
     text-align: center;
     letter-spacing: 2px;
 }
@@ -250,7 +248,8 @@ header{
     text-align: center;
 }
 .aCard:hover{
-    border: 3px solid gray
+    border: 1px solid gray;
+    box-shadow: 0px 5px 5px gray;
 }
 
 .footer{
