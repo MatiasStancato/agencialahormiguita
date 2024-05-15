@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./formulario.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>Formulario de Consulta</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">bla</a>
+            <a href="#">bla2</a>
+        </nav>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem veritatis vitae facilis adipisci porro iure facere, itaque impedit deleniti eos possimus nemo asperiores ab, vero provident sed quae sit.</p>
+    </header>
+    <main>
+        <div id="main-container">
+            <div class="container1">
+                <h1>Contacto</h1>
+                <p>Realizá tu consulta y te responderemos a la brevedad.</p>
+    
+                <form id="contactForm" action="#" onsubmit="return validacion();">
+                    <label for="firstName">Nombre(*):</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Escribe tu nombre" autofocus>
+                    <span id="errorNombre" class="error-message"></span>
+                    
+                    <label for="lastName">Apellido(*):</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Escribe tu apellido">
+                    <span id="errorApellido" class="error-message"></span>
+                    
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Ingrese su email">
+                    <span id="errorEmail" class="error-message"></span>
+                    
+                    <label for="cellphone">Número de Celular(*):</label>
+                    <input type="tel" id="cellphone" name="cellphone" placeholder="Escribe tu número de celular">
+                    <span id="errorCelular" class="error-message"></span>
+        
+        <div class="travel-info">
+            <label for="travelDate">Fecha de Viaje:</label>
+            <input type="date" id="travelDate" name="travelDate">
+        </div>
+
+        
+<label for="passengers">Cantidad de Pasajeros:</label>
+<input type="number" id="passengers" name="passengers" min="1" placeholder="Escribe la cantidad">
+
+        <label for="howDidYouFindUs">¿Cómo nos conociste?</label>
+        <select id="howDidYouFindUs" name="howDidYouFindUs">
+      
+            <option value="search">Búsqueda en línea</option>
+            <option value="friend">Recomendación de un amigo</option>
+            <option value="social">Redes sociales</option>
+            <option value="other">Otro</option>
+        </select>
+        <br>
+
+        <label for="message">Consulta:</label>
+    <textarea id="message" name="message" rows="4" placeholder="Escribe tu consulta"></textarea>
+      <span id="errorMessage" class="error-message"></span>
+        <p>(*) Campos obligatorios.</p>
+
+        <button  type="submit" class="btn btn-primary">
+            <span class="glyphicon glyphicon-send"></span> Enviar 
+        </button>
+    </form>
+
+
+    <div id="error" style="color: red;"></div>
+</div>
+
+<div class="container2">
+    <div class="column">
+       
+        <h2><i class="fa-solid fa-location-dot"></i> Direccion: <br> calle 1225 <br> localidad <br> Bs. As,</h2>
+    </div>
+    <div class="column">
+        <h2><i class="fa-solid fa-phone"></i> Teléfono <p>11111111111</p></h2>
+    </div>
+
+    <div class="column">
+       
+        <h2><i class="fa-solid fa-envelope"></i> Email <br> hfhsfif@hfdsfi-com</h2>
+    </div>
+    <div class="column">  
+    <h2>Redes sociales <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-whatsapp"></i></h2>
+    </div>
+
+    <img class="img" src="./img/1.jpg" alt="personas enviando mensajes">
+
+</div>
+</div>
+</main>
+<footer><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci veniam aspernatur quod doloremque, numquam magnam dicta eaque sapiente corrupti ea ipsa. Molestias cumque veniam nihil debitis necessitatibus. Numquam, modi esse!</p></footer>
+    <script src="./formulario.js"></script>
+
+
+</body>
+</html>
