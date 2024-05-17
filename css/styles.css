@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Rubik", sans-serif;
 }
 
+/* HEADER */
 header{
     height: auto;
     width: 100%;
@@ -26,8 +27,9 @@ header{
 .headernav {
     width: 100%;
     height: auto;
-    background-color: whitesmoke;
-    /* border-top: 1px solid gray; */
+    background-color: rgb(15, 101, 159);
+    padding:2px 0;
+    border-top: 1px solid gray; 
     
 }
 .headernav ul{
@@ -43,11 +45,62 @@ header{
 .linkNav{
     text-decoration: none;
     font-size: 24px;
-    color: green;
+    color: #e1af69;
     font-weight: 400;
 }
 .linkNav:hover{
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid #FEBB02;
+}
+/* FOOTER */
+.footer {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(15, 101, 159);
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+.footerSuperior{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+.footerInferior{
+align-self: center;
+margin-bottom: 5px;
+}
+.titleFooter{
+margin: 20px 0px;
+text-align: center;
+}
+.parrafoFooter{
+text-align: center;
+}
+.parrafoFooter li{
+list-style: none;
+margin: 10px 0px;
+}
+.redesSociales ul{
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+list-style: none;
+font-size: 30px;
+}
+.footer a{
+text-decoration: none;
+color: #e1af69;
+} 
+.footer a:hover{
+border-bottom: 1px solid #e1af69;
+}
+.titleFooter{
+color:#e1af69;
+}
+.parrafoFooter{
+color:#e1af69;
 }
 
 /* SLIDER  */
@@ -168,22 +221,18 @@ header{
 } */
 
 .title{
-    font-size: 50px;
-    margin: 15px 0px;
+    font-size: 60px;
     letter-spacing: 6px;
-    color: green;
+    color: rgb(15, 101, 159);
     text-align: center;
+    /* background-color: whitesmoke; */
 }
 .parrafoHome{
     font-size: 25px;
     text-align: center;
-    color:lightseagreen
+    color:rgb(15, 101, 159);
 }
 
-.titleCard{
-    font-size: 45px;
-    margin: 15px 0px;
-}
 .parrafoHome{
     font-size: 25px;
 }
@@ -195,6 +244,10 @@ header{
     border-top: 1px solid gray;
     margin-bottom: 20px;
 }
+.parrafoContainer{
+  width: 80%;
+}
+
 .cardContenier{
     width: 100%;
     height: 500px;
@@ -204,108 +257,130 @@ header{
     justify-content: center;
 }
 .card{
-    width: 20%;
-    height: 100%;
+    width: 330px;
+    height: 94%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, rgba(40,162,146,1) 48%, rgba(18,163,88,1) 96%);
+    background: linear-gradient(135deg, rgb(15, 101, 159) 48%, rgb(0, 140, 240) 96%);
     margin: 0px 20px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    box-shadow: 5px 10px 10px lightseagreen
+    padding: 10 0px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(0, 85, 135);
+    position:relative;
 }
 .titleCard{
-    color: beige;
-    margin: 10px 0;
-    letter-spacing: 3px;
+    color: #e1af69;
+    letter-spacing: 7px;
+    font-size: 45px;
+    margin: 25px 0px;
+    z-index:100;
+    text-shadow: 0px 2px 2px rgb(15, 101, 159);
+    
 }
 .imgCard{
-    width: 80%;
-    height: 150px;
-    object-fit: cover;
+    width: 90%;
+    height: 200px;
+    object-fit:cover;
+    border-radius: 5px;
 }
-.parrafoContainer{
-  width: 80%;
-}
-
 .parrafoCard{
-    display: block;
-    background-color: beige;
-    font-size: 40px;
-    margin: 10px 0;
-    border-radius: 10px;
-    padding: 3px;
-    color: salmon;
-    height: 65px;
-    text-align: center;
-    letter-spacing: 2px;
+  display: block;
+  font-size: 60px;
+  border-radius: 10px;
+  padding: 3px;
+  color: #e1af69;
+  height: 65px;
+  text-align: center;
+  letter-spacing: 5px;
+  font-weight: 800;
 }
 
+.pCardUp{
+font-size: 20px;
+color:#e1af69;
+margin:25px 0px;
+}
+
+.animacionCard {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  bottom: 442px;
+  z-index: 0;
+  pointer-events: auto;
+}
+
+.animacionCard img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.9s ease, opacity 0.5s ease;
+  border-radius: 5px;
+}
+
+.animacionCard:hover img {
+  transform: translateX(100%);
+  opacity: 0;
+}
 .aCard{
-    width: max-content;
-    height: 65px;
-    background-color: beige;
-    font-size: 40px;
-    padding: 5px 10px;
-    margin: 20px;
-    text-decoration: none;
-    color: salmon;
-    border-radius: 10px;
-    text-align: center;
-    align-content: center;
+  text-decoration: none;
 }
-.aCard:hover{
-    border: 1px solid white;
-    box-shadow: 0px 5px 5px blanchedalmond;
+.ofertasTitle{
+  margin-top: 20px;
+  font-size:40px;
+  position: relative;
+  margin-left: 50px;
+  color:rgb(15, 101, 159);
 }
-
-.footer {
-    width: 100%;
-    height: 300px;
-    background-color: lightseagreen;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
-}
-.footerSuperior{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.footerInferior{
-  align-self: center;
-  margin-bottom: 5px;
-}
-
-.titleFooter{
-  margin: 20px 0px;
-  text-align: center;
-}
-.parrafoFooter{
-  text-align: center;
-}
-.parrafoFooter li{
-  list-style: none;
-  margin: 10px 0px;
-}
-.redesSociales ul{
+.ofertasContainer{
+  width: 70%;
+  height: 300px;
   display:flex;
   flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-  font-size: 30px;
+  align-content: space-around;
+  margin:20px  auto;
 }
-.footer a{
+.ofertasCard{
+  width:100%;
+  height: 100%;
+  margin: 0 20px;
+}
+.ofertasCard img{
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.ofertasCard:hover{
+  transform: scale(1.1);
+  transition: transform 0.9s ease, opacity 0.5s ease;
+}
+.linkOfertas{
   text-decoration: none;
-  color: black;
-} 
-.footer a:hover{
-  border-bottom: 1px solid black;
 }
+.ofertaspCardSuperior{
+  position:relative;
+  bottom:280px;
+  left: 10px;
+  z-index: 10;
+  color:white;
+  font-size: 18px;
+  font-weight: 600;
+}
+.ofertaspCard{
+  position: relative;
+  bottom: 60px;
+  left: 20px ;
+  color: #e1af69;
+  background-color: rgb(15, 101, 159);
+  width: max-content;
+  padding: 5px;
+}
+
+
 
 /* TIPOS DE VIAJES */
 .contenedorViajes{
@@ -321,7 +396,7 @@ header{
 }
 .tipos{
   width: 50%;
-  background: linear-gradient(135deg, rgba(40,162,146,1) 48%, rgba(18,163,88,1) 96%);
+  background: linear-gradient(135deg, rgb(15, 101, 159) 48%, rgb(0, 140, 240) 96%);
   margin: 20px auto;
   height: 200px;
   position: relative;  
@@ -333,13 +408,14 @@ header{
   position: relative;
   letter-spacing: 2px;
   margin-left: 20px;
-  color: white;
+  color: #e1af69;
+  text-shadow: 0px 2px 2px rgb(15, 101, 159);
 }
 .tiposParrafo{
   font-size: 18px;
   text-align: center;
   margin-top: 10px;
-  color:#f2f2f2;
+  color:#e1af69;
   position: relative;
 }
 .tiposLink{
@@ -351,7 +427,7 @@ header{
   position: relative;
   overflow: hidden;
   display: inline-block;
-  bottom: 152px;
+  bottom: 122px;
   z-index: 0;
   pointer-events: auto;
 }
@@ -367,6 +443,10 @@ header{
   transform: translateX(100%);
   opacity: 0;
 }
+
+
+
+
 
 
 
