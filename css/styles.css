@@ -56,7 +56,7 @@ header{
   width: 100%;
   height: 300px;
   background-color: rgb(15, 101, 159);
-  margin-top: 50px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -147,7 +147,8 @@ color:#e1af69;
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgb(15, 101, 159);
+  color: white;
 }
 
 .text {
@@ -225,7 +226,7 @@ color:#e1af69;
     letter-spacing: 6px;
     color: rgb(15, 101, 159);
     text-align: center;
-    /* background-color: whitesmoke; */
+    margin:30px 0px;
 }
 .parrafoHome{
     font-size: 25px;
@@ -271,7 +272,7 @@ color:#e1af69;
     position:relative;
 }
 .titleCard{
-    color: #e1af69;
+    color: white;
     letter-spacing: 7px;
     font-size: 45px;
     margin: 25px 0px;
@@ -335,32 +336,38 @@ margin:25px 0px;
   margin-left: 50px;
   color:rgb(15, 101, 159);
 }
-.ofertasContainer{
-  width: 70%;
+  .ofertasContainer{
+  width: 100%;
   height: 300px;
   display:flex;
   flex-direction: row;
-  align-content: space-around;
-  margin:20px  auto;
+  justify-content: center;
+  display: flex;
 }
+
 .ofertasCard{
   width:100%;
   height: 100%;
-  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
+
 .ofertasCard img{
   width: 80%;
   height: 100%;
   object-fit: cover;
-  position: relative;
 }
+
 .ofertasCard:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: transform 0.9s ease, opacity 0.5s ease;
 }
+
 .linkOfertas{
   text-decoration: none;
 }
+
 .ofertaspCardSuperior{
   position:relative;
   bottom:280px;
@@ -369,6 +376,7 @@ margin:25px 0px;
   color:white;
   font-size: 18px;
   font-weight: 600;
+  text-shadow: 0px 2px 2px rgb(15, 101, 159);
 }
 .ofertaspCard{
   position: relative;
@@ -378,7 +386,7 @@ margin:25px 0px;
   background-color: rgb(15, 101, 159);
   width: max-content;
   padding: 5px;
-}
+} 
 
 
 
@@ -408,7 +416,7 @@ margin:25px 0px;
   position: relative;
   letter-spacing: 2px;
   margin-left: 20px;
-  color: #e1af69;
+  color: white;
   text-shadow: 0px 2px 2px rgb(15, 101, 159);
 }
 .tiposParrafo{
@@ -440,6 +448,89 @@ margin:25px 0px;
 }
 
 .animacionImg:hover img {
+  transform: translateX(100%);
+  opacity: 0;
+}
+/* DESTINOS */
+.destinosPrincipal{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px auto;
+  border-top: 1px solid gray;
+}
+.destinosLink{
+  text-decoration: none;
+}
+.contenedorDestinos{
+  width: 100%;
+  height: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 20px;
+}
+.destinosCard{
+  width:80%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgb(0, 85, 135);
+  
+}
+.backgroundDestino{
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top:0px;
+  left:0px
+}
+.destinosTitle{
+  display: block;
+  font-size: 24px;
+  z-index: 100;
+  position: relative;
+  margin: 30px 0px;
+  letter-spacing: 2px;
+  color: white;
+  text-shadow: 0px 2px 2px rgb(15, 101, 159)
+}
+.destinosParrafo{
+  margin: 20px 15px;
+  position: absolute;
+  font-size: 20px;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  text-shadow: 0px 2px 2px  rgb(15, 101, 159);
+  line-height: 30px;
+}
+
+.animacionImgDestino{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  bottom: 89px;
+  z-index: 0;
+  pointer-events: auto;
+}
+
+.animacionImgDestino img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.9s ease, opacity 0.5s ease;
+}
+
+.animacionImgDestino:hover img {
   transform: translateX(100%);
   opacity: 0;
 }
