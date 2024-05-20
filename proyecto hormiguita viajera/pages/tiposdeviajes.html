@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tipos de viajes | La hormiga viajera </title>
+    <link rel="icon" type="image/x-icon" href="../img/logoazul.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3cd9eb1cb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div><a href="../index.html"><img  class="logoMain" src="../img/logoazul.png" alt="logo de una hormiga viajera"></a></div>
+            <nav class="headernav">
+                <ul>
+                    <li><a class="linkNav" href="../index.html">HOME</a></li>
+                    <li><a class="linkNav" href="../pages/destinos.html">DESTINOS</a></li>
+                    <li><a class="linkNav" href="../pages/login.html">VUELOS</a></li>
+                    <li><a class="linkNav" href="../pages/galeria.html">GALERIA DE FOTOS</a></li>
+                    <li><a class="linkNav" href="../pages/quienessomos.html">¿QUIENES SOMOS?</a></li>
+                    <li><a class="linkNav" href="../pages/contacto.html">CONTACTOS</a></li>
+                </ul> 
+            </nav>
+    </header>
+    <main class="viajesMain">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img class="imgSlider" src="../img/i1.jpg" >
+                    <div class="text">Grecia</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img class="imgSlider" src="../img/i2.jpg" >
+                    <div class="text">Playa</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img class="imgSlider" src="../img/i3.jpg" >
+                    <div class="text">Ciudad</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img class="imgSlider" src="../img/i4.jpg" >
+                    <div class="text">Playa</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>  
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div> 
+            <div class="contenedorViajes">
+                <h2 class="title">Tipos de Viajes</h2>
+                <div class="contenedorTipos">
+                    <a class="tiposLink" href="#">
+                        <div class="tipos">
+                            <h3 class="tiposTitle">Viajes de Aventura</h3>
+                            <p class="tiposParrafo"> Estos viajes están diseñados para aquellos que buscan emociones fuertes y experiencias fuera de lo común. Pueden incluir actividades como senderismo en montañas, rafting en ríos, safari en la selva, buceo en arrecifes de coral, entre otros.
+                            </p>
+                            <div class="animacionImg"><img src="../img/pexels-dreamypixel-547116.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a class="tiposLink" href="#">
+                        <div class="tipos">
+                        <h3 class="tiposTitle">Viajes Culturales</h3>
+                            <p class="tiposParrafo">Perfectos para quienes desean sumergirse en la historia, arte y cultura de diferentes destinos. Estos viajes pueden incluir visitas a museos, monumentos históricos, festivales locales, recorridos por sitios arqueológicos y experiencias culinarias auténticas.</p>
+                            <div class="animacionImg"><img src="../img/piramides.jpg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a class="tiposLink" href="#">  
+                        <div class="tipos">
+                        <h3 class="tiposTitle">Viajes de Relax y Bienestar</h3>
+                        <p class="tiposParrafo">Ideales para aquellos que buscan rejuvenecer cuerpo y mente. Estos viajes pueden incluir estancias en resorts de lujo con spa, retiros de yoga y meditación, clases de cocina saludable, y actividades al aire libre como yoga o caminatas tranquilas por la naturaleza.</p>
+                        <div class="animacionImg"><img src="../img/pexels-enric-cruz-lopez-6039244.jpg" alt="">
+                        </div>
+                        </div>
+                    </a>
+                    <a class="tiposLink" href="#">
+                        <div class="tipos">
+                        <h3 class="tiposTitle">Viajes Familiares</h3>
+                        <p class="tiposParrafo">Dirigidos a familias que desean crear recuerdos inolvidables juntos. Estos viajes pueden adaptarse para satisfacer las necesidades de todas las edades e incluir actividades como parques temáticos, excursiones familiares.</p>
+                        <div class="animacionImg"><img src="../img/familytravel.jpg" alt="">
+                        </div>
+                        </div>
+                    </a>
+                    <a class="tiposLink" href="#">
+                        <div class="tipos">
+                        <h3 class="tiposTitle">Viajes de Luna de Miel y Románticos</h3>
+                        <p class="tiposParrafo">Pensados para parejas que buscan celebrar su amor en entornos idílicos. Estos viajes pueden incluir escapadas a destinos exóticos, cenas románticas a la luz de las velas, paseos en barco al atardecer, alojamientos exclusivos y experiencias privadas diseñadas para dos.</p>
+                        <div class="animacionImg"><img src="../img/lunademiel.jpg" alt="">
+                        </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    </main>
+    <footer class="footer" >
+        <div class="footerSuperior">
+            <span class="parrafoFooter">
+                <h3 class="titleFooter">Sobre nosotros</h3>
+                <ul>
+                    <li><a href="">Quienes somos</a></li>
+                    <li><a href="">Agencias</a></li>
+                    <li><a href="">Trabaja con nosotros</a></li>
+                    <li><a href="">Afiliados</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </span>
+            <span class="parrafoFooter">
+                <h3 class="titleFooter">Planea tus viajes</h3>
+                <ul>
+                    <li><a href="">Blog de viajes</a></li>
+                    <li><a href="">Guia de viajes</a></li>
+                    <li><a href="">Catalogos</a></li>
+                    <li><a href="">Turismo accesible</a></li>
+                    <li><a href="">Viajes de lujo</a></li>
+                </ul>
+            </span>
+            <span class="parrafoFooter">
+                <h3 class="titleFooter">Informacion importante</h3>
+                <ul>
+                    <li><a href="">Condiciones generales</a></li>
+                    <li><a href="">Politica de privacidad</a></li>
+                    <li><a href="">Centro de ayuda</a></li>
+                    <li><a href="">Politica de cookies</a></li>
+                </ul>
+            </span>
+            <div class="redesSociales">
+                <h3 class="titleFooter">Seguinos en:</h3>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-square-facebook iconosRedes"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram iconosRedes"></a></i></li>
+                    <li><a href=""><i class="fa-brands fa-youtube iconosRedes"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerInferior">
+            <p class="parrafoFooter">La Hormiga viajera | todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="../Js/carrousel.js"></script>
+</body>
+</html>
