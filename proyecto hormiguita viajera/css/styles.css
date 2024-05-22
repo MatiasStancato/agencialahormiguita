@@ -19,6 +19,17 @@ header{
     z-index: 1000;
 
 }
+/* Agregado Mary */
+#menu-toggle {
+  display: none;
+}
+.menu-icon {
+  cursor: pointer;
+  display: none; /* Oculta esto por defecto */
+  font-size: 24px;
+  padding: 10px;
+}
+/* termina Agregado Mary */
 .logoMain{
     height: 140px;
     width: auto;
@@ -27,7 +38,7 @@ header{
 .headernav {
     width: 100%;
     height: auto;
-    background-color: rgb(15, 101, 159);
+    background-color: #0203e2;
     padding:2px 0;
     border-top: 1px solid gray; 
     
@@ -45,29 +56,54 @@ header{
 .linkNav{
     text-decoration: none;
     font-size: 24px;
-    color: #e1af69;
+    color: whitesmoke;
     font-weight: 400;
 }
 .linkNav:hover{
-  border-bottom: 2px solid #FEBB02;
+  border-bottom: 3px solid whitesmoke;
   
 }
 
-.inicioSesion{
+.inicioSesion {
   background: #FEBB02;
   color: rgb(15, 101, 159);
   padding: 0px 5px;
+  border-radius: 5px; 
+  box-shadow: 0 0 20px #4f9;
 }
-.inicioSesion:hover{
+
+.inicioSesion:hover {
   color: #e1af69;
   border-bottom: 2px solid #FEBB02;
-  background-color: rgb(15, 101, 159);;
+  background-color: rgb(15, 101, 159);
+  border-radius: 5px; 
+}
+
+  /* Agregado Mary */
+@media (max-width: 480px) {
+  .menu-icon {
+      display: block;
+  }
+
+  /* Oculta el menú por defecto en pantallas pequeñas */
+  .headernav ul {
+      display: none;
+      position: absolute;
+      background-color: rgb(15, 101, 159);
+      width: 100%;
+  }
+  /* termina Agregado Mary */
+
+  /* Muestra el menú cuando el checkbox esté marcado */
+  #menu-toggle:checked ~ .headernav ul {
+      display: block;
+  }
 }
 /* FOOTER */
 .footer {
   width: 100%;
   height: 300px;
-  background-color: rgb(15, 101, 159);
+  background-color: #0203e2;
   margin-top: 80px;
   display: flex;
   flex-direction: column;
@@ -86,6 +122,7 @@ margin-bottom: 5px;
 .titleFooter{
 margin: 20px 0px;
 text-align: center;
+font-weight: bold;
 }
 .parrafoFooter{
 text-align: center;
@@ -103,16 +140,16 @@ font-size: 30px;
 }
 .footer a{
 text-decoration: none;
-color: #e1af69;
+color: whitesmoke;
 } 
 .footer a:hover{
-border-bottom: 1px solid #e1af69;
+border-bottom: 1px solid whitesmoke;
 }
 .titleFooter{
-color:#e1af69;
+color:whitesmoke;
 }
 .parrafoFooter{
-color:#e1af69;
+color:whitesmoke;
 }
 
 /* SLIDER  */
@@ -236,14 +273,16 @@ color:#e1af69;
 .title{
     font-size: 60px;
     letter-spacing: 6px;
-    color: rgb(15, 101, 159);
+    color: #1d1d86;
     text-align: center;
     margin:30px 0px;
+    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000; 
 }
+
 .parrafoHome{
     font-size: 25px;
     text-align: center;
-    color:rgb(15, 101, 159);
+    color:#1d1d86;
 }
 
 .parrafoHome{
@@ -341,6 +380,7 @@ margin:25px 0px;
 .aCard{
   text-decoration: none;
 }
+
 .ofertasTitle{
   margin-top: 20px;
   font-size:40px;
@@ -435,8 +475,9 @@ margin:25px 0px;
   font-size: 18px;
   text-align: center;
   margin-top: 10px;
-  color:#e1af69;
+  color:white;
   position: relative;
+
 }
 .tiposLink{
   text-decoration: none;
@@ -522,6 +563,7 @@ margin:25px 0px;
   color: white;
   text-shadow: 0px 2px 2px  rgb(15, 101, 159);
   line-height: 30px;
+  background: rgba(6, 57, 81, 0.5);
 }
 
 .animacionImgDestino{
@@ -760,7 +802,7 @@ font-weight: normal;
   width: 30%;
   /* float: left;  */
   background-color: bisque;
-  color: mediumorchid;
+  color: rgb(125, 85, 211);
   border-radius: 0.5rem;
   box-shadow: 0.25rem 0.25rem .5 darkblue;
 }
@@ -844,6 +886,15 @@ font-weight: normal;
   color: white;
 }
 /* QUIENES SOMOS? */
+.quienesSomos {
+  color:white;
+ }
+ .subtitulos{
+  color: #003B95;
+  font-size: 30px;
+  text-shadow: 2px 2px 2px #000;
+
+ }
 .mapa {
   width: 600px;
   display: flex;
@@ -895,8 +946,9 @@ font-weight: normal;
 }
 /* Página de inicio de sesión */
 
+
 .iniciarContainer {
-  display: flex;
+  display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -917,14 +969,13 @@ font-weight: normal;
   display: block;
 }
 
-
-#registerForm label {
+#loginForm label, #registerForm label {
   display: block;
   margin-top: 10px;
   text-align: left;
 }
 
-#registerForm input {
+#loginForm input, #registerForm input {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
@@ -932,7 +983,7 @@ font-weight: normal;
   border-radius: 4px;
 }
 
-#registerForm button {
+#loginForm button, #registerForm button {
   width: 100%;
   padding: 10px;
   margin-top: 20px;
@@ -943,7 +994,7 @@ font-weight: normal;
   cursor: pointer;
 }
 
-#registerForm button:hover {
+#loginForm button:hover, #registerForm button:hover {
   background-color: #1A4FA0;
 }
 
@@ -952,28 +1003,21 @@ font-weight: normal;
   margin-top: 20px;
 }
 
-#registerForm a {
+#loginForm a, #registerForm a {
   color: #003B95;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
 }
 
-#goToRegister {
+#goToRegister, #goToLogin {
   color: #003B95;
 }
 
-#goToLogin {
-  color: #003B95;
-}
-
-#goToRegister:hover {
+#goToRegister:hover, #goToLogin:hover {
   color: white;
 }
 
-#goToLogin:hover {
-  color: white;
-}
 
 
 
