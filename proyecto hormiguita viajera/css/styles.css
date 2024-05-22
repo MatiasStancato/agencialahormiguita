@@ -65,7 +65,7 @@ header{
 }
 
 .inicioSesion {
-  background: #FEBB02;
+  background: #F1B504;
   color: rgb(15, 101, 159);
   padding: 0px 5px;
   border-radius: 5px; 
@@ -74,7 +74,7 @@ header{
 
 .inicioSesion:hover {
   color: #e1af69;
-  border-bottom: 2px solid #FEBB02;
+  border-bottom: 2px solid #F1B504;
   background-color: rgb(15, 101, 159);
   border-radius: 5px; 
 }
@@ -279,6 +279,7 @@ color:whitesmoke;
     text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000; 
 }
 
+
 .parrafoHome{
     font-size: 25px;
     text-align: center;
@@ -342,7 +343,7 @@ color:whitesmoke;
   font-size: 60px;
   border-radius: 10px;
   padding: 3px;
-  color: #e1af69;
+  color: #F1B504;
   height: 65px;
   text-align: center;
   letter-spacing: 5px;
@@ -351,7 +352,7 @@ color:whitesmoke;
 
 .pCardUp{
 font-size: 20px;
-color:#e1af69;
+color:#F1B504;
 margin:25px 0px;
 }
 
@@ -434,12 +435,31 @@ margin:25px 0px;
   position: relative;
   bottom: 60px;
   left: 20px ;
-  color: #e1af69;
-  background-color: rgb(15, 101, 159);
+  color: #F1B504;
+  background-color: #0203E2;
   width: max-content;
   padding: 5px;
 } 
 
+@keyframes suave {
+  0% { opacity: 0; }
+  30% { opacity: 1; }
+  60% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.ofertaspCard {
+  position: relative;
+  bottom: 60px;
+  left: 20px ;
+  color: #F1B504;
+  background-color: #0203E2;
+  width: max-content;
+  padding: 5px;
+  /* Agregamos la animación aquí */
+  animation: suave 4s linear infinite;
+  animation-delay: 10s;
+}
 
 
 /* TIPOS DE VIAJES */
@@ -748,14 +768,14 @@ margin-top: 20px;
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #5cb85c;
+  background-color: #003B95;
   color: white;
   cursor: pointer;
 }
 
 
 .containerForm button:hover {
-  background-color: #4cae4c;
+  background-color: #F1B504
 }
 
 
@@ -995,7 +1015,7 @@ font-weight: normal;
 }
 
 #loginForm button:hover, #registerForm button:hover {
-  background-color: #1A4FA0;
+  background-color: #F1B504;
 }
 
 .error-message {
