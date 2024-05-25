@@ -43,5 +43,5 @@ function validacion() {
 
 function envioExitoso() {
   // Abrir una nueva pestaña con la página de agradecimiento
-  window.open('pagina-de-agradecimiento.html', '_blank');
+  window.open('paginaDeAgradecimiento.html', '_blank');
 }

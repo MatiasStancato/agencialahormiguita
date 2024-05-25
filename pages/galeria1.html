@@ -14,7 +14,9 @@
 <body>
     <header class="header">
         <div><a href="../index.html"><img  class="logoMain" src="../img/logoazul.png" alt="logo de una hormiga viajera"></a></div>
-            <nav class="headernav">
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>  
+        <nav class="headernav">
                 <ul>
                     <li><a class="linkNav" href="../index.html">HOME</a></li>
                     <li><a class="linkNav" href="../pages/destinos.html">DESTINOS</a></li>
@@ -26,21 +28,30 @@
             </nav>
     </header>
     <main>
+
+        <div class="ful-img" id="fulImgBox">
+            <img src="imgs/1.jpg" id="fulImg" alt="">
+            <span onclick="closeImg()">X</span>
+        </div>
+        
     <h1 class="title">“Destinos Encantadores: Vive Tu Historia”</h1>
 
     <div class="img-gallery">
-        <img src="../img/1.jpg" onclick="openFulImg(this.src)" alt="">
-        <img src="../img/2.jpg" onclick="openFulImg(this.src)" alt="">
-        <img src="../img/3.jpg" onclick="openFulImg(this.src)" alt="">
-        <img src="../img/4.jpg" onclick="openFulImg(this.src)" alt="">
-        <img src="../img/5.jpg" onclick="openFulImg(this.src)" alt="">
-        <img src="../img/6.jpg" onclick="openFulImg(this.src)" alt="">
-        <img src="../img/7.jpg" onclick="openFulImg(this.src)" alt="">
-        <img src="../img/8.jpg" onclick="openFulImg(this.src)" alt="">
-        <img src="../img/9.jpg" onclick="openFulImg(this.src)" alt="">
-        <img src="../img/10.jpg" onclick="openFulImg(this.src)" alt="">
-        <img src="../img/11.jpg" onclick="openFulImg(this.src)" alt="">
-        <img src="../img/12.jpg" onclick="openFulImg(this.src)" alt="">
+        <img src="../img/1.jpg" onclick="openFulImg(this.src)" alt="Amigas de vacaciones">
+        <img src="../img/2.jpg" onclick="openFulImg(this.src)" alt="Flia de vacaciones">
+        <img src="../img/3.jpg" onclick="openFulImg(this.src)" alt="Mujer feliz acampando en montaña">
+        <img src="../img/4.jpg" onclick="openFulImg(this.src)" alt="Flia en playa">
+        <img src="../img/5.jpg" onclick="openFulImg(this.src)" alt="Sr con deidades Indu">
+        <img src="../img/6.jpg" onclick="openFulImg(this.src)" alt="Amigas en cabaña playa">
+        <img src="../img/7.jpg" onclick="openFulImg(this.src)" alt="Pareja sacandose foto">
+        <img src="../img/8.jpg" onclick="openFulImg(this.src)" alt="Flia sobre elefante">
+        <img src="../img/9.jpg" onclick="openFulImg(this.src)" alt="Amigas en la playa">
+        <img src="../img/10.jpg" onclick="openFulImg(this.src)" alt="Amigos en embarcación">
+        <img src="../img/11.jpg" onclick="openFulImg(this.src)" alt="Amigas en montaña">
+        <img src="../img/12.jpg" onclick="openFulImg(this.src)" alt="Mujeres en Japon">
+        <img src="../img/13.jpeg" onclick="openFulImg(this.src)" alt="amigos en pileta">
+        <img src="../img/14.jpeg" onclick="openFulImg(this.src)" alt="Pareja besandose">
+        <img src="../img/15.jpeg" onclick="openFulImg(this.src)" alt="Mujer con paragua">
     </div>
 </main>
 <footer class="footer" >
@@ -87,6 +98,6 @@
         <p class="parrafoFooter">La Hormiguita viajera | todos los derechos reservados.</p>
     </div>
 </footer>
-    <script src="./script.js"></script>
+    <script src="../Js/galeria.js"></script>
 </body>
 </html>

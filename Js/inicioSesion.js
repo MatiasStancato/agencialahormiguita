@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const registerErrorMessage = document.getElementById('register-error-message');
 
     function showForm(form) {
-        document.querySelector('.form-container.active').classList.remove('active');
+        document.querySelector('.iniciarForm-container.active').classList.remove('active');
         form.classList.add('active');
     }
 
